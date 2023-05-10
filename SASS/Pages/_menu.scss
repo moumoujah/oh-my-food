@@ -1,0 +1,77 @@
+.menu{
+
+    &__image{
+        object-fit: cover;
+        width: 100%;
+        height: 275px;
+        z-index: 1;
+        position: relative;
+    }
+    &__bloc{
+        z-index: 2;
+        border-top-left-radius: 40px;
+        border-top-right-radius: 40px;
+        margin-top: - 60px;
+        background-color: $grey-light;
+        position: relative;
+        padding: 35px 13px;
+
+          
+    }
+    &__header{
+        @include flex(center, nowrap, row, space-between);
+        margin-bottom: 40px;
+       
+          
+           h1{
+            font-family: 'Shrikhand' , cursive;
+            font-style: italic;
+            font-weight: $font-9;
+            font-size: $size28;
+            
+           }
+           i{
+            font-size: $size28;
+           }
+       }
+
+
+}
+.plats{
+    margin-bottom: 40px;
+      
+      h2{
+        font-size: $size16;
+        font-weight: $font-3;
+        margin-bottom: 3px;
+        text-transform: uppercase;
+       
+      }
+      .border-title{
+        border: 2px solid #99E2D0;
+        width: 40px;
+        margin-bottom: 15px;
+
+      }
+      &__name{
+        padding: 12px 13px;
+        background-color: $white;
+        margin-bottom: 12px;
+        border-radius: 15px;
+          
+           h3{
+            font-size: $size18;
+            font-weight: $font-7;
+            margin-bottom: 5px;
+           }
+           h4{ 
+            font-size: $size15;
+            font-weight: $font-3;
+           
+
+           }
+           .prix{
+            @include flex(none, nowrap, row, space-between);
+           }
+      }
+}

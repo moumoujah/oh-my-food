@@ -1,0 +1,11 @@
+.header{
+    height: 63px;
+    @include heading-shadow;
+    @include flex(center, nowrap, row, center);
+      
+      &__nav{
+        position: absolute;
+        margin-left: -290px;
+        font-size: $size19;
+      }
+}

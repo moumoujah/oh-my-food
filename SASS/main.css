@@ -1,0 +1,222 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  color: #000;
+  max-width: 1400px;
+  font-weight: 500;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.header {
+  height: 63px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.btn {
+  height: 50px;
+  width: 218px;
+  border-radius: 25px;
+  background: linear-gradient(180deg, #d866b8 0%, #9356DC 100%);
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+  display: flex;
+  align-items: center;
+  flex-wrap: none;
+  flex-direction: row;
+  justify-content: center;
+  color: #FFF;
+  font-weight: 500;
+}
+
+.btn_save {
+  margin-right: 11px;
+}
+.btn_save i {
+  font-size: 21px;
+}
+
+.card {
+  margin-bottom: 18px;
+  height: 251px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+}
+.card__image {
+  height: 173px;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
+}
+.card__body {
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 14px;
+}
+.card__body h3 {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 7px;
+}
+.card__body h4 {
+  font-size: 17px;
+  font-weight: 300;
+}
+.card__new {
+  position: absolute;
+  color: #008766;
+  background-color: #99E2D0;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
+  padding: 7px 9px 7px 9px;
+  font-size: 14px;
+  border-radius: 2px;
+  margin-left: 243px;
+  margin-top: 15px;
+}
+
+.footer {
+  padding: 22px 25px 22px 25px;
+  background-color: #353535;
+  color: #FFF;
+}
+.footer h2 {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 16px;
+  font-family: "Shrikhand";
+  font-style: italic;
+}
+.footer__li {
+  margin-bottom: 7px;
+}
+
+.reservez {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #F6F6F6;
+  padding-bottom: 57px;
+}
+.reservez__location {
+  font-weight: 500;
+  background-color: #EAEAEA;
+  width: 100%;
+  margin-bottom: 39px;
+  height: 50px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  flex-wrap: none;
+  flex-direction: row;
+  justify-content: center;
+}
+.reservez__location i {
+  margin-right: 17px;
+}
+.reservez h1 {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  padding: 0px 35px;
+  display: flex;
+  align-items: center;
+  flex-wrap: none;
+  flex-direction: row;
+  justify-content: center;
+}
+.reservez__p {
+  font-size: 18px;
+  font-weight: 300;
+  margin-bottom: 27px;
+  padding: 0px 20px;
+}
+
+.fonctionnement {
+  padding: 50px 20px 50px 20px;
+}
+.fonctionnement h2 {
+  margin-bottom: 26px;
+}
+.fonctionnement .lifonct {
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+  width: 322px;
+  height: 72.38px;
+  background-color: #F6F6F6;
+  margin: 0px 0px 20px 15px;
+  display: flex;
+  align-items: center;
+  flex-wrap: none;
+  flex-direction: row;
+  justify-content: none;
+  border-radius: 20px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+}
+.fonctionnement .lifonct__number {
+  position: absolute;
+  margin-left: -15px;
+  border-radius: 50%;
+  background-color: #9356DC;
+  height: 20px;
+  width: 20px;
+  color: #FFF;
+  display: flex;
+  align-items: center;
+  flex-wrap: none;
+  flex-direction: row;
+  justify-content: center;
+  font-size: 14px;
+}
+.fonctionnement .lifonct__icon {
+  margin: 0px 27px 0px 21px;
+}
+.fonctionnement .lifonct h3 {
+  font-weight: 500;
+}
+
+.restaurant_cards {
+  padding: 50px 15px 50px 15px;
+  background-color: #F6F6F6;
+}
+.restaurant_cards h2 {
+  padding-bottom: 20px;
+}/*# sourceMappingURL=main.css.map */

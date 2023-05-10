@@ -1,0 +1,19 @@
+.btn{
+    height: 50px;
+    width: 218px;
+    border-radius: 25px;
+    
+    background: linear-gradient(180deg, #d866b8 0%, #9356DC 100%);
+    @include card-liner-shadow;
+    @include flex(center, none, row, center);
+    color: $white;
+    font-weight: $font-5;
+}
+
+.btn_save {
+    margin-right: 11px;
+       
+       i{
+        font-size: $size21;
+       }
+   }

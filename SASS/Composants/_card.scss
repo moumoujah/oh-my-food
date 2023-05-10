@@ -1,0 +1,45 @@
+.card{
+    margin-bottom: 18px;
+    height: 251px;
+    @include card-shadow;
+    border-radius: 15px;
+      
+       &__image{
+        height: 173px;
+        width: 100%;
+        object-fit: cover;
+        border-top-right-radius : 15px;
+        border-top-left-radius : 15px;
+       }
+       &__body {
+        @include flex(center, nowrap , row, space-between);
+        padding: 14px;
+
+           h3{
+            font-size: $size18;
+            font-weight: $font-7;
+            margin-bottom: 5px;
+           }
+           h4{
+            font-size: $size17;
+            font-weight: $font-3;
+           }
+           
+       }
+       &__new {
+        position: absolute;
+        color: $color-font;
+        background-color: $color-tertiaire;
+        @include heading-shadow;
+        padding: 7px 9px 7px 9px;
+        font-size: $size14;
+        border-radius: 2px;
+        margin-left: 243px;
+        margin-top: 15px;
+       
+       }
+}
+.menu__order{
+    @include flex(center, none, row, center);
+    margin-bottom: 5px;
+}
