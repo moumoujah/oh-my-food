@@ -3,6 +3,26 @@
     height: 251px;
     @include card-shadow;
     border-radius: 15px;
+    @keyframes save {
+        0% {
+            opacity: .5;
+        }
+        20% {
+            opacity: .6;
+        }
+        40% {
+            opacity: .7;
+        }
+        60% {
+            opacity: .8;
+        }
+        80% {
+            opacity: .9;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
       
        &__image{
         height: 173px;
@@ -15,6 +35,7 @@
         @include flex(center, nowrap , row, space-between);
         padding: 14px;
 
+
            h3{
             font-size: $size18;
             font-weight: $font-7;
@@ -24,6 +45,7 @@
             font-size: $size17;
             font-weight: $font-3;
            }
+          
            
        }
        &__new {
@@ -31,11 +53,12 @@
         color: $color-font;
         background-color: $color-tertiaire;
         @include heading-shadow;
-        padding: 7px 9px 7px 9px;
+        padding: 6px 8px 6px 8px;
         font-size: $size14;
         border-radius: 2px;
-        margin-left: 243px;
+        right: 27px;
         margin-top: 15px;
+        @include heading-shadow ;
        
        }
 }

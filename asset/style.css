@@ -1,26 +1,70 @@
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+.btn_save {
+  cursor: pointer;
+  font-size: 21px;
+  font-weight: 300;
+  margin-right: 10px;
+}
+.btn_save i:active {
+  background-image: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+}
+
+.plats__check {
+  background-color: #99E2D0;
+  color: #FFF;
+  width: 59px;
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  justify-content: center;
+  margin: -12px -72px -12px 16px;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  transition: margin-right 750ms ease;
+}
+
+html, body, p, ol, ul, li, dl, dt, dd, blockquote, figure, fieldset, legend, textarea, pre, iframe, hr, h1, h2, h3, h4, h5, h6 {
   margin: 0;
   padding: 0;
 }
 
-ol, ul {
+h1, h2, h3, h4, h5, h6 {
+  font-size: 100%;
+  font-weight: normal;
+}
+
+ul {
   list-style: none;
+}
+
+button, input, select {
+  margin: 0;
 }
 
 html {
   box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+img, video {
+  height: auto;
+  max-width: 100%;
+}
+
+iframe {
+  border: 0;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+td, th {
+  padding: 0;
 }
 
 html {
@@ -47,7 +91,7 @@ a {
 }
 .header__nav {
   position: absolute;
-  margin-left: -290px;
+  left: 23px;
   font-size: 19px;
 }
 
@@ -55,7 +99,7 @@ a {
   height: 50px;
   width: 218px;
   border-radius: 25px;
-  background: linear-gradient(180deg, #d866b8 0%, #9356DC 100%);
+  background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
   display: flex;
   align-items: center;
@@ -65,12 +109,9 @@ a {
   color: #FFF;
   font-weight: 500;
 }
-
-.btn_save {
-  margin-right: 11px;
-}
-.btn_save i {
-  font-size: 21px;
+.btn:hover {
+  box-shadow: 0 15px 20px rgba(0, 0, 0, 0.2);
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.15)), linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%);
 }
 
 .card {
@@ -78,6 +119,26 @@ a {
   height: 251px;
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
   border-radius: 15px;
+}
+@keyframes save {
+  0% {
+    opacity: 0.5;
+  }
+  20% {
+    opacity: 0.6;
+  }
+  40% {
+    opacity: 0.7;
+  }
+  60% {
+    opacity: 0.8;
+  }
+  80% {
+    opacity: 0.9;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 .card__image {
   height: 173px;
@@ -108,11 +169,12 @@ a {
   color: #008766;
   background-color: #99E2D0;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
-  padding: 7px 9px 7px 9px;
+  padding: 6px 8px 6px 8px;
   font-size: 14px;
   border-radius: 2px;
-  margin-left: 243px;
+  right: 27px;
   margin-top: 15px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
 }
 
 .menu__order {
@@ -131,13 +193,17 @@ a {
 }
 .footer h2 {
   font-size: 18px;
-  font-weight: 900;
+  font-weight: 700;
   margin-bottom: 16px;
   font-family: "Shrikhand", cursive;
   font-style: italic;
 }
 .footer__li {
   margin-bottom: 7px;
+}
+.footer__li i {
+  font-size: 12px;
+  margin-right: 10px;
 }
 
 .reservez {
@@ -152,12 +218,12 @@ a {
   text-align: center;
 }
 .reservez__location {
-  font-weight: 500;
   background-color: #EAEAEA;
   width: 100%;
   margin-bottom: 39px;
   height: 50px;
-  font-weight: 500;
+  font-weight: 600;
+  font-style: normal;
   display: flex;
   align-items: center;
   flex-wrap: none;
@@ -174,7 +240,7 @@ a {
 }
 .reservez__p {
   font-size: 18px;
-  font-weight: 300;
+  font-weight: 200;
   margin-bottom: 27px;
 }
 
@@ -183,6 +249,8 @@ a {
 }
 .fonctionnement h2 {
   margin-bottom: 26px;
+  font-weight: 700;
+  font-size: 24px;
 }
 .fonctionnement .lifonct {
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
@@ -215,8 +283,11 @@ a {
 .fonctionnement .lifonct__icon {
   margin: 0px 27px 0px 21px;
 }
+.fonctionnement .lifonct__i-color {
+  color: #9356DC;
+}
 .fonctionnement .lifonct h3 {
-  font-weight: 500;
+  font-weight: 700;
 }
 
 .restaurant_cards {
@@ -224,7 +295,9 @@ a {
   background-color: #F6F6F6;
 }
 .restaurant_cards h2 {
-  padding-bottom: 20px;
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 24px;
 }
 
 .menu__image {
@@ -253,12 +326,11 @@ a {
 }
 .menu__header h1 {
   font-family: "Shrikhand", cursive;
-  font-style: italic;
-  font-weight: 900;
   font-size: 28px;
 }
 .menu__header i {
-  font-size: 28px;
+  font-size: 24px;
+  margin-right: 18px;
 }
 
 .plats {
@@ -267,35 +339,56 @@ a {
 .plats h2 {
   font-size: 16px;
   font-weight: 300;
-  margin-bottom: 3px;
+  margin-bottom: 7px;
   text-transform: uppercase;
 }
 .plats .border-title {
-  border: 2px solid #99E2D0;
+  background-color: #99E2D0;
+  height: 3px;
   width: 40px;
-  margin-bottom: 15px;
+  margin-bottom: 13px;
 }
-.plats__name {
+.plats__card {
   padding: 12px 13px;
   background-color: #FFF;
   margin-bottom: 12px;
   border-radius: 15px;
-}
-.plats__name h3 {
-  font-size: 18px;
-  font-weight: 700;
-  margin-bottom: 5px;
-}
-.plats__name h4 {
-  font-size: 15px;
-  font-weight: 300;
-}
-.plats__name .prix {
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
   display: flex;
   align-items: none;
   flex-wrap: nowrap;
   flex-direction: row;
   justify-content: space-between;
+  animation: check 750ms cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  transform: scale(0);
+  overflow: hidden;
+  cursor: pointer;
+}
+@keyframes check {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.plats__card:hover .plats__check {
+  margin-right: -12px;
+}
+.plats__card h3 {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+.plats__card h4 {
+  font-size: 15px;
+  font-weight: 300;
+}
+.plats__card .prix {
+  right: 5px;
+}
+.plats__name {
+  flex: 1;
 }
 
 /*# sourceMappingURL=style.css.map */

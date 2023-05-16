@@ -6,7 +6,7 @@
 
     h2{
         font-size: $size18;
-        font-weight: $font-9;
+        font-weight: $font-7;
         margin-bottom: 16px;
         font-family: 'Shrikhand', cursive;
         font-style: italic;
@@ -15,6 +15,11 @@
       }
       &__li{
         margin-bottom: 7px;
+
+         i{
+          font-size: $size12;
+          margin-right: 10px;
+         }
         
       }
 }

@@ -1,26 +1,45 @@
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+html, body, p, ol, ul, li, dl, dt, dd, blockquote, figure, fieldset, legend, textarea, pre, iframe, hr, h1, h2, h3, h4, h5, h6 {
   margin: 0;
   padding: 0;
 }
 
-ol, ul {
+h1, h2, h3, h4, h5, h6 {
+  font-size: 100%;
+  font-weight: normal;
+}
+
+ul {
   list-style: none;
+}
+
+button, input, select {
+  margin: 0;
 }
 
 html {
   box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+img, video {
+  height: auto;
+  max-width: 100%;
+}
+
+iframe {
+  border: 0;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+td, th {
+  padding: 0;
 }
 
 html {
@@ -45,12 +64,17 @@ a {
   flex-direction: row;
   justify-content: center;
 }
+.header__nav {
+  position: absolute;
+  margin-left: -290px;
+  font-size: 19px;
+}
 
 .btn {
   height: 50px;
   width: 218px;
   border-radius: 25px;
-  background: linear-gradient(180deg, #d866b8 0%, #9356DC 100%);
+  background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
   display: flex;
   align-items: center;
@@ -93,7 +117,7 @@ a {
 .card__body h3 {
   font-size: 18px;
   font-weight: 700;
-  margin-bottom: 7px;
+  margin-bottom: 5px;
 }
 .card__body h4 {
   font-size: 17px;
@@ -111,6 +135,15 @@ a {
   margin-top: 15px;
 }
 
+.menu__order {
+  display: flex;
+  align-items: center;
+  flex-wrap: none;
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: 5px;
+}
+
 .footer {
   padding: 22px 25px 22px 25px;
   background-color: #353535;
@@ -118,9 +151,9 @@ a {
 }
 .footer h2 {
   font-size: 18px;
-  font-weight: 700;
+  font-weight: 900;
   margin-bottom: 16px;
-  font-family: "Shrikhand";
+  font-family: "Shrikhand", cursive;
   font-style: italic;
 }
 .footer__li {
@@ -136,6 +169,7 @@ a {
   justify-content: center;
   background-color: #F6F6F6;
   padding-bottom: 57px;
+  text-align: center;
 }
 .reservez__location {
   font-weight: 500;
@@ -157,18 +191,11 @@ a {
   font-size: 24px;
   font-weight: 700;
   margin-bottom: 20px;
-  padding: 0px 35px;
-  display: flex;
-  align-items: center;
-  flex-wrap: none;
-  flex-direction: row;
-  justify-content: center;
 }
 .reservez__p {
   font-size: 18px;
   font-weight: 300;
   margin-bottom: 27px;
-  padding: 0px 20px;
 }
 
 .fonctionnement {
@@ -179,15 +206,14 @@ a {
 }
 .fonctionnement .lifonct {
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
-  width: 322px;
   height: 72.38px;
   background-color: #F6F6F6;
-  margin: 0px 0px 20px 15px;
+  margin: 0px 0px 20px 10px;
   display: flex;
   align-items: center;
   flex-wrap: none;
   flex-direction: row;
-  justify-content: none;
+  justify-content: flex-start;
   border-radius: 20px;
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
 }
@@ -219,4 +245,77 @@ a {
 }
 .restaurant_cards h2 {
   padding-bottom: 20px;
+}
+
+.menu__image {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 275px;
+  z-index: 1;
+  position: relative;
+}
+.menu__bloc {
+  z-index: 2;
+  border-top-left-radius: 40px;
+  border-top-right-radius: 40px;
+  margin-top: -60px;
+  background-color: #F6F6F6;
+  position: relative;
+  padding: 35px 13px;
+}
+.menu__header {
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+.menu__header h1 {
+  font-family: "Shrikhand", cursive;
+  font-style: italic;
+  font-weight: 900;
+  font-size: 28px;
+}
+.menu__header i {
+  font-size: 24px;
+}
+
+.plats {
+  margin-bottom: 40px;
+}
+.plats h2 {
+  font-size: 16px;
+  font-weight: 300;
+  margin-bottom: 7px;
+  text-transform: uppercase;
+}
+.plats .border-title {
+  background-color: #99E2D0;
+  height: 3px;
+  width: 40px;
+  margin-bottom: 13px;
+}
+.plats__name {
+  padding: 12px 13px;
+  background-color: #FFF;
+  margin-bottom: 12px;
+  border-radius: 15px;
+}
+.plats__name h3 {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+.plats__name h4 {
+  font-size: 15px;
+  font-weight: 300;
+}
+.plats__name .prix {
+  display: flex;
+  align-items: none;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  justify-content: space-between;
 }/*# sourceMappingURL=main.css.map */
