@@ -6,7 +6,7 @@
 
     h2{
         font-size: $size18;
-        font-weight: $font-7;
+        font-weight: $font-5;
         margin-bottom: 16px;
         font-family: 'Shrikhand', cursive;
         font-style: italic;
@@ -17,9 +17,29 @@
         margin-bottom: 7px;
 
          i{
-          font-size: $size12;
-          margin-right: 10px;
+          font-size: $size14;
+          min-width: 20px;
          }
         
       }
+      @media screen and (min-width: 1024px){
+        padding: 64px 25px 30px 150px;
+        display: flex;
+    flex-direction: row-reverse;
+        h2{
+           margin: 0px 35px 5px 50px;
+           
+
+        }
+       
+        ul{
+          @include flex(center, none, row, space-between);
+           
+        }
+        &__li{
+          margin-right: 33px;
+        }
+       
+
+    }
 }

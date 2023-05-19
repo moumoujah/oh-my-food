@@ -35,7 +35,7 @@
 .fonctionnement{
 
     
-    padding: 50px 20px 50px 20px;
+    padding: 50px 20px ;
    
      h2{
         margin-bottom: 26px;
@@ -77,11 +77,34 @@
                 }
            }
      
+           @media screen and (min-width: 768px){
+            
+                padding: 50px 70px ;
+           
+           }
+           @media screen and (min-width: 1024px){
+             padding: 50px ;
 
+              &__list{
+                @include flex(center, none, row, space-between);
+                h3{
+                    margin-right: 35px;
+                }
+              }
+           }
+           @media screen and (min-width: 1440px){
+            
+            padding: 50px 180px ;
+             
+             h3{
+                margin-right: 55px;
+             }
+       
+       }
 
 }
-.restaurant_cards{
-    padding: 50px 15px 50px 15px;
+.restaurant_card{
+    padding: 50px 15px ;
     background-color: $grey-light;
 
        h2{
@@ -89,4 +112,21 @@
         font-weight: $font-7;
         font-size: $size24;
        }
+       
+        @media screen and (min-width: 768px){
+            
+            &__list{
+            @include flex(center, wrap, row, space-between);
+           
+        }
+       
+       }
+       @media screen and (min-width: 1024px){
+           padding: 50px;
+
+       }
+       @media screen and (min-width: 1440px){
+        padding: 50px 180px;
+
+    }
 }

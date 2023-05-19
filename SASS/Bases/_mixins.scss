@@ -38,3 +38,6 @@
 @mixin hover-shadow {
     box-shadow: 0 15px 20px rgba(0, 0, 0, .2);
 }
+@mixin card-hover-shadow{
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.35);
+}

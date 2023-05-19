@@ -61,6 +61,14 @@
         @include heading-shadow ;
        
        }
+       @media screen and (min-width: 768px){
+        width: 340px;
+        
+       }
+       @media screen and (min-width: 1440px){
+        width: 490px;
+        
+       }
 }
 .menu__order{
     @include flex(center, none, row, center);
