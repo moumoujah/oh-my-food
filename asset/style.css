@@ -3,19 +3,19 @@
   font-size: 21px;
   font-weight: 300;
   margin-right: 10px;
+  border: 0;
+  background-color: #F6F6F6;
+}
+.btn_save i {
+  font-size: rem(25);
 }
 .btn_save i:hover {
+  font-weight: 700;
   background-image: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
-  animation: save 700ms ease-in-out both;
-  border-radius: 50%;
-}
-@keyframes save {
-  0% {
-    opacity: 0.5;
-  }
-  100% {
-    opacity: 1;
-  }
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  -moz-background-clip: text;
 }
 
 .plats__check {
@@ -83,6 +83,7 @@ html {
   color: #000;
   max-width: 1440px;
   font-weight: 500;
+  margin: auto;
 }
 
 a {
@@ -127,24 +128,13 @@ a {
 .card {
   margin-bottom: 18px;
   height: 251px;
+  position: relative;
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
   border-radius: 15px;
 }
 @keyframes save {
   0% {
     opacity: 0.5;
-  }
-  20% {
-    opacity: 0.6;
-  }
-  40% {
-    opacity: 0.7;
-  }
-  60% {
-    opacity: 0.8;
-  }
-  80% {
-    opacity: 0.9;
   }
   100% {
     opacity: 1;
@@ -174,6 +164,9 @@ a {
   font-size: 17px;
   font-weight: 300;
 }
+.card__description {
+  width: 100%;
+}
 .card__new {
   position: absolute;
   color: #008766;
@@ -188,12 +181,20 @@ a {
 }
 @media screen and (min-width: 768px) {
   .card {
-    width: 340px;
+    width: 47%;
+    margin-bottom: 28px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .card {
+    width: 47%;
+    margin-bottom: 37px;
   }
 }
 @media screen and (min-width: 1440px) {
   .card {
     width: 490px;
+    margin-bottom: 50px;
   }
 }
 
@@ -363,7 +364,7 @@ a {
   background-color: #F6F6F6;
 }
 .restaurant_card h2 {
-  margin-bottom: 20px;
+  margin-bottom: 25px;
   font-weight: 700;
   font-size: 24px;
 }
@@ -376,6 +377,20 @@ a {
     justify-content: space-between;
   }
 }
+@media screen and (min-width: 768px) {
+  .restaurant_card__list {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+@media screen and (min-width: 768px) and (min-width: 768px) {
+  .restaurant_card {
+    padding: 50px 30px;
+  }
+}
 @media screen and (min-width: 1024px) {
   .restaurant_card {
     padding: 50px;
@@ -384,6 +399,9 @@ a {
 @media screen and (min-width: 1440px) {
   .restaurant_card {
     padding: 50px 180px;
+  }
+  .restaurant_card h2 {
+    margin-bottom: 30px;
   }
 }
 

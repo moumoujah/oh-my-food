@@ -106,9 +106,10 @@
 .restaurant_card{
     padding: 50px 15px ;
     background-color: $grey-light;
+   
 
        h2{
-        margin-bottom: 20px;
+        margin-bottom: 25px;
         font-weight: $font-7;
         font-size: $size24;
        }
@@ -117,16 +118,33 @@
             
             &__list{
             @include flex(center, wrap, row, space-between);
+            
            
         }
        
        }
+       @media screen and (min-width: 768px){
+            
+        &__list{
+        @include flex(center, wrap, row, space-between);
+        
+       
+    }
+    @media screen and (min-width: 768px){
+        padding: 50px 30px;
+    }
+   
+   }
        @media screen and (min-width: 1024px){
            padding: 50px;
 
        }
        @media screen and (min-width: 1440px){
         padding: 50px 180px;
+        h2{
+            margin-bottom: 30px;
+            
+           }
 
     }
 }
