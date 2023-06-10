@@ -1,3 +1,72 @@
+#bloc_page {
+  position: relative;
+  animation: content-appear 2s ease-in-out both;
+}
+
+.wrapper {
+  display: flex;
+  column-gap: 10px;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  align-items: center;
+  justify-content: center;
+  background-color: #FFF;
+  z-index: 9999;
+  animation: fadeOut 2s normal forwards ease-in-out;
+}
+.wrapper .dot {
+  border-radius: 50%;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  animation: animate 500ms ease-in-out infinite alternate;
+}
+.wrapper .dot:nth-child(1) {
+  animation-delay: -0.25s;
+  height: 20px;
+  width: 20px;
+  background: #9356DC;
+}
+.wrapper .dot:nth-child(2) {
+  background: #FF79DA;
+  animation-delay: -0.5s;
+  height: 20px;
+  width: 20px;
+}
+.wrapper .dot:nth-child(3) {
+  background: #99E2D0;
+  animation-delay: -0.75s;
+  height: 20px;
+  width: 20px;
+}
+
+@keyframes animate {
+  0% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(5px);
+  }
+}
+@keyframes content-appear {
+  0% {
+    z-index: 0;
+  }
+  100% {
+    z-index: 10000;
+  }
+}
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+.anim-plates {
+  animation-delay: 555ms;
+}
+
 .btn_save {
   cursor: pointer;
   font-size: 21px;
@@ -16,8 +85,20 @@
   -webkit-text-fill-color: transparent;
   -moz-text-fill-color: transparent;
   -moz-background-clip: text;
+  animation: save 2s ease-in-out both;
 }
 
+@keyframes save {
+  0% {
+    opacity: 0.6;
+  }
+  50% {
+    opacity: 0.3;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 .plats__check {
   background-color: #99E2D0;
   color: #FFF;
@@ -99,6 +180,7 @@ a {
   flex-wrap: nowrap;
   flex-direction: row;
   justify-content: center;
+  position: relative;
 }
 .header__nav {
   position: absolute;
@@ -452,6 +534,7 @@ a {
 
 .plats {
   margin-bottom: 40px;
+  animation: plate-appear 2s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 .plats h2 {
   font-size: 16px;
@@ -489,6 +572,14 @@ a {
     transform: scale(1);
   }
 }
+@keyframes plate-appear {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
 .plats__card:hover .plats__check {
   margin-right: -13px;
 }
@@ -511,6 +602,36 @@ a {
 }
 .plats__name {
   flex: 1;
+}
+.plats--1 {
+  animation-delay: 1s;
+}
+.plats--2 {
+  animation-delay: 2s;
+}
+.plats--3 {
+  animation-delay: 3s;
+}
+.plats--4 {
+  animation-delay: 4s;
+}
+.plats--5 {
+  animation-delay: 5s;
+}
+.plats--6 {
+  animation-delay: 6s;
+}
+.plats--7 {
+  animation-delay: 7s;
+}
+.plats--8 {
+  animation-delay: 8s;
+}
+.plats--9 {
+  animation-delay: 9s;
+}
+.plats--10 {
+  animation-delay: 10s;
 }
 
 /*# sourceMappingURL=style.css.map */

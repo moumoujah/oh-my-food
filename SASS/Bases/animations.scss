@@ -1,68 +1,83 @@
-
-// .wrapper {
-//     display: flex;
-//     column-gap: 10px;
-//     height: 100%;
-//     width: 100%;
-//     position: fixed;
-//     align-items: center;
-//     justify-content: center;
-//     background-color: $white;
-//     z-index: 9999;
-//     animation: fadeOut 2s normal forwards ease-in-out;
+#bloc_page{
+    position: relative;
+    animation: content-appear 2s ease-in-out both;
+}
+.wrapper {
+    display: flex;
+    column-gap: 10px;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    align-items: center;
+    justify-content: center;
+    background-color: $white;
+    z-index: 9999;
+    animation: fadeOut 2s normal forwards ease-in-out;
+    
+    
     
   
-//   .dot {
+  .dot {
     
-//     border-radius: 50%;
-//     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
-//     animation: animate 500ms ease-in-out infinite alternate;
+    border-radius: 50%;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    animation: animate 500ms ease-in-out infinite alternate;
     
    
-//   }
-//   .dot:nth-child(1) {
-//     animation-delay: -0.25s;
-//     height: 20px;
-//     width: 20px;
-//     background: $color-primaire;
+  }
+  .dot:nth-child(1) {
+    animation-delay: -0.25s;
+    height: 20px;
+    width: 20px;
+    background: $color-primaire;
     
     
-//   }
-//   .dot:nth-child(2) {
-//     background: $color-secondaire;
-//     animation-delay: -0.5s;
-//     height: 20px;
-//     width: 20px;
+  }
+  .dot:nth-child(2) {
+    background: $color-secondaire;
+    animation-delay: -0.5s;
+    height: 20px;
+    width: 20px;
     
     
-//   }
-//   .dot:nth-child(3) {
-//     background: $color-tertiaire;
-//     animation-delay: -0.75s;
-//     height: 20px;
-//     width: 20px;
+  }
+  .dot:nth-child(3) {
+    background: $color-tertiaire;
+    animation-delay: -0.75s;
+    height: 20px;
+    width: 20px;
     
-//   }
-// }
+  }
+}
   
-//   @keyframes animate {
-//     0% {
-//       transform: translateY(-10px);
-//     }
-//     100% {
-//       transform: translateY(5px);
-//     }
+  @keyframes animate {
+    0% {
+      transform: translateY(-10px);
+    }
+    100% {
+      transform: translateY(5px);
+    }
    
-//   }
-//   @keyframes fadeOut {
-//     0% {
-//       opacity:1;
-//     }
-//     100% {
-//       opacity:0;
-//     }
-//   }
-  
+  }
+  @keyframes content-appear {
+	0% {
+		z-index: 0;
+	}
+	100% {
+		z-index: 10000;
+	}
+}
+  @keyframes fadeOut {
+    0% {
+      opacity:1;
+    }
+    100% {
+      opacity:0;
+    }
+  }
+  .anim-plates{
+    animation-delay: 555ms;
+  }
   
 
 .btn_save{
@@ -82,10 +97,21 @@
             -webkit-text-fill-color: transparent;
             -moz-text-fill-color: transparent;
             -moz-background-clip: text;
-            
+            animation: save 2s ease-in-out both;
         }
     }
 
+}
+@keyframes save {
+	0% {
+		opacity: .6;
+	}
+	50% {
+		opacity: .3;
+	}
+	100% {
+		opacity: 1;
+	}
 }
 
 .plats__check{

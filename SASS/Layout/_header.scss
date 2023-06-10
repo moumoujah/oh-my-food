@@ -2,6 +2,7 @@
     height: 63px;
     @include heading-shadow;
     @include flex(center, nowrap, row, center);
+    position: relative;
       
       &__nav{
         position: absolute;
