@@ -514,6 +514,7 @@ a {
 .menu__header h1 {
   font-family: "Shrikhand", cursive;
   font-size: 28px;
+  margin-right: 25px;
 }
 .menu__header i {
   font-size: 24px;
@@ -522,6 +523,13 @@ a {
 @media screen and (min-width: 768px) {
   .menu__bloc {
     padding: 50px 90px;
+  }
+  .menu__header {
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: center;
   }
 }
 @media screen and (min-width: 1440px) {
@@ -602,6 +610,8 @@ a {
 }
 .plats__name {
   flex: 1;
+  white-space: nowrap;
+  overflow: hidden;
 }
 .plats--1 {
   animation-delay: 1s;
