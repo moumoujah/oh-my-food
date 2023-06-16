@@ -5,6 +5,7 @@
 .wrapper {
     display: flex;
     column-gap: 10px;
+    max-width: 1440px;
     height: 100%;
     width: 100%;
     position: fixed;
@@ -50,34 +51,6 @@
   }
 }
   
-  @keyframes animate {
-    0% {
-      transform: translateY(-10px);
-    }
-    100% {
-      transform: translateY(5px);
-    }
-   
-  }
-  @keyframes content-appear {
-	0% {
-		z-index: 0;
-	}
-	100% {
-		z-index: 10000;
-	}
-}
-  @keyframes fadeOut {
-    0% {
-      opacity:1;
-    }
-    100% {
-      opacity:0;
-    }
-  }
-  .anim-plates{
-    animation-delay: 555ms;
-  }
   
 
 .btn_save{
@@ -88,7 +61,7 @@
     border: 0;
     background-color: $grey-light;
     i {
-        font-size: rem(25);
+        font-size: 21px;
 
         &:hover {
             font-weight: 700;
@@ -102,17 +75,7 @@
     }
 
 }
-@keyframes save {
-	0% {
-		opacity: .6;
-	}
-	50% {
-		opacity: .3;
-	}
-	100% {
-		opacity: 1;
-	}
-}
+
 
 .plats__check{
 

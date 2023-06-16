@@ -1,3 +1,43 @@
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes content-appear {
+  0% {
+    z-index: 0;
+  }
+  100% {
+    z-index: 10000;
+  }
+}
+@keyframes animate {
+  0% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(5px);
+  }
+}
+@keyframes check {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes plate-appear {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
 #bloc_page {
   position: relative;
   animation: content-appear 2s ease-in-out both;
@@ -6,6 +46,7 @@
 .wrapper {
   display: flex;
   column-gap: 10px;
+  max-width: 1440px;
   height: 100%;
   width: 100%;
   position: fixed;
@@ -39,34 +80,6 @@
   width: 20px;
 }
 
-@keyframes animate {
-  0% {
-    transform: translateY(-10px);
-  }
-  100% {
-    transform: translateY(5px);
-  }
-}
-@keyframes content-appear {
-  0% {
-    z-index: 0;
-  }
-  100% {
-    z-index: 10000;
-  }
-}
-@keyframes fadeOut {
-  0% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-.anim-plates {
-  animation-delay: 555ms;
-}
-
 .btn_save {
   cursor: pointer;
   font-size: 21px;
@@ -76,7 +89,7 @@
   background-color: #F6F6F6;
 }
 .btn_save i {
-  font-size: rem(25);
+  font-size: 21px;
 }
 .btn_save i:hover {
   font-weight: 700;
@@ -88,17 +101,6 @@
   animation: save 2s ease-in-out both;
 }
 
-@keyframes save {
-  0% {
-    opacity: 0.6;
-  }
-  50% {
-    opacity: 0.3;
-  }
-  100% {
-    opacity: 1;
-  }
-}
 .plats__check {
   background-color: #99E2D0;
   color: #FFF;
@@ -571,22 +573,6 @@ a {
   transform: scale(0);
   overflow: hidden;
   cursor: pointer;
-}
-@keyframes check {
-  0% {
-    transform: scale(0);
-  }
-  100% {
-    transform: scale(1);
-  }
-}
-@keyframes plate-appear {
-  0% {
-    transform: scale(0);
-  }
-  100% {
-    transform: scale(1);
-  }
 }
 .plats__card:hover .plats__check {
   margin-right: -13px;

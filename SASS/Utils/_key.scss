@@ -1,0 +1,43 @@
+
+@keyframes fadeOut {
+    0% {
+      opacity:1;
+    }
+    100% {
+      opacity:0;
+    }
+  }
+  @keyframes content-appear {
+	0% {
+		z-index: 0;
+	}
+	100% {
+		z-index: 10000;
+	}
+}
+@keyframes animate {
+    0% {
+      transform: translateY(-10px);
+    }
+    100% {
+      transform: translateY(5px);
+    }
+   
+  }
+  @keyframes check {
+    0% {
+      transform: scale(0);
+    }
+    100% {
+      transform: scale(1);
+    }
+    
+  }
+  @keyframes plate-appear {
+    0% {
+      transform: scale(0)
+    }
+    100% {
+      transform: scale(1);
+    }
+  }

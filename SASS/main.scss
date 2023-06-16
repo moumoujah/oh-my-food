@@ -1,14 +1,15 @@
 
 
-@import "./bases/mixins";
-@import "./bases/variables";
-@import "./bases/animations";
+@import "./utils/mixins";
+@import "./utils/key";
+@import "./utils/variables";
+@import "./composants/animations";
 @import "./bases/reset";
 @import "./bases/base";
 @import "./layout/header";
 @import "./composants/buttons";
 @import "./composants/card";
-@import "./composants/section";
+
 
 
 
