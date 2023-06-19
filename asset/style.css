@@ -46,7 +46,6 @@
 .wrapper {
   display: flex;
   column-gap: 10px;
-  max-width: 1440px;
   height: 100%;
   width: 100%;
   position: fixed;
@@ -98,7 +97,7 @@
   -webkit-text-fill-color: transparent;
   -moz-text-fill-color: transparent;
   -moz-background-clip: text;
-  animation: save 2s ease-in-out both;
+  transition: all 700ms ease-in-out;
 }
 
 .plats__check {
@@ -116,39 +115,129 @@
   transition: margin-right 600ms ease;
 }
 
-html, body, p, ol, ul, li, dl, dt, dd, blockquote, figure, fieldset, legend, textarea, pre, iframe, hr, h1, h2, h3, h4, h5, h6 {
+html,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
   margin: 0;
   padding: 0;
-}
-
-h1, h2, h3, h4, h5, h6 {
-  font-size: 100%;
-  font-weight: normal;
-}
-
-ul {
-  list-style: none;
-}
-
-button, input, select {
-  margin: 0;
-}
-
-html {
-  box-sizing: border-box;
-}
-
-*, *::before, *::after {
-  box-sizing: inherit;
-}
-
-img, video {
-  height: auto;
-  max-width: 100%;
-}
-
-iframe {
   border: 0;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style-type: none;
+  text-decoration: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
 }
 
 table {
@@ -156,15 +245,18 @@ table {
   border-spacing: 0;
 }
 
-td, th {
+body {
+  margin: 0;
   padding: 0;
+  border: 0;
+  font-family: "Roboto", sans-serif;
+  vertical-align: baseline;
 }
 
 html {
   font-family: "Roboto", sans-serif;
   font-size: 16px;
   color: #000;
-  max-width: 1440px;
   font-weight: 500;
   margin: auto;
 }
@@ -277,7 +369,7 @@ a {
 }
 @media screen and (min-width: 1440px) {
   .card {
-    width: 490px;
+    width: 47%;
     margin-bottom: 50px;
   }
 }
@@ -440,6 +532,14 @@ a {
   }
   .fonctionnement h3 {
     margin-right: 55px;
+  }
+}
+@media screen and (min-width: 1445px) {
+  .fonctionnement {
+    padding: 50px 180px;
+  }
+  .fonctionnement h3 {
+    margin-right: 105px;
   }
 }
 
