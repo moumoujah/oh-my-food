@@ -1,4 +1,5 @@
-.reservez{
+                 // Réservez le menu qui vou convient
+.reservez{   
     
     width: 100%;
     @include flex(center, nowrap, column, center);
@@ -31,14 +32,14 @@
     }
 }
 
-
+                    //  section fonctionnement avec les li : choisissez/composez/déguster
 .fonctionnement{
 
     
     padding: 50px 20px ;
    
      h2{
-        margin-bottom: 26px;
+        margin-bottom: 30px;
         font-weight: $font-7;
         font-size: $size24;
         
@@ -46,10 +47,10 @@
   
         .lifonct{
             @include fonctionnement-shadow;
-           
+           width: 96%;
             height: 72.38px;
             background-color:  $grey-light;
-            margin: 0px 0px 20px 10px;
+            margin: 0px 0px 28px 10px;
             @include flex(center, none, row, flex-start);
             border-radius: 20px;
             @include fonctionnement-shadow;
@@ -79,8 +80,16 @@
            }
      
            @media screen and (min-width: 768px){
-            
-                padding: 50px 70px ;
+            &__list{
+                @include flex(center, none, row, space-between);
+               h3{
+                margin-right: 10px;
+               }
+              }
+                padding: 50px 30px ;
+            .lifonct{
+                width: 30%;
+            }
            
            }
            @media screen and (min-width: 1024px){
@@ -88,31 +97,26 @@
 
               &__list{
                 @include flex(center, none, row, space-between);
-                h3{
-                    margin-right: 35px;
-                }
+               
               }
            }
            @media screen and (min-width: 1440px){
             
             padding: 50px 180px ;
              
-             h3{
-                margin-right: 55px;
-             }
+             
        
        }
        @media screen and (min-width: 1445px){
             
         padding: 50px 180px ;
          
-         h3{
-            margin-right: 105px;
-         }
+        
    
    }
 
 }
+                                //    section restaurants avec les artciles des 4 restaurants différents
 .restaurant_card{
     padding: 50px 15px ;
     background-color: $grey-light;

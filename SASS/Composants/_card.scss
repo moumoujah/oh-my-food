@@ -1,3 +1,5 @@
+                            
+                        //    4 article card des différents menus dans la section restaurants du menu d'accueil
 .card{
     margin-bottom: 18px;
     height: 251px;
@@ -68,6 +70,7 @@
         margin-bottom: 50px;
        }
 }
+                    // div qui contient le boutton (btn) commander en bas des pages menus 
 .menu__order{
     @include flex(center, none, row, center);
     margin-bottom: 5px;

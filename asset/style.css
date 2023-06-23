@@ -86,18 +86,20 @@
   margin-right: 10px;
   border: 0;
   background-color: #F6F6F6;
+  margin-right: 20px;
+  margin-bottom: 24px;
 }
 .btn_save i {
   font-size: 21px;
+  position: absolute;
 }
 .btn_save i:hover {
   font-weight: 700;
   background-image: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  -moz-text-fill-color: transparent;
-  -moz-background-clip: text;
-  transition: all 700ms ease-in-out;
+  background-clip: text;
+  transition: all 500ms ease-in-out;
 }
 
 .plats__check {
@@ -113,6 +115,41 @@
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
   transition: margin-right 600ms ease;
+}
+
+.plats {
+  margin-bottom: 40px;
+  animation: plate-appear 2s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+.plats--1 {
+  animation-delay: 1s;
+}
+.plats--2 {
+  animation-delay: 2s;
+}
+.plats--3 {
+  animation-delay: 3s;
+}
+.plats--4 {
+  animation-delay: 4s;
+}
+.plats--5 {
+  animation-delay: 5s;
+}
+.plats--6 {
+  animation-delay: 6s;
+}
+.plats--7 {
+  animation-delay: 7s;
+}
+.plats--8 {
+  animation-delay: 8s;
+}
+.plats--9 {
+  animation-delay: 9s;
+}
+.plats--10 {
+  animation-delay: 10s;
 }
 
 html,
@@ -465,15 +502,16 @@ a {
   padding: 50px 20px;
 }
 .fonctionnement h2 {
-  margin-bottom: 26px;
+  margin-bottom: 30px;
   font-weight: 700;
   font-size: 24px;
 }
 .fonctionnement .lifonct {
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+  width: 96%;
   height: 72.38px;
   background-color: #F6F6F6;
-  margin: 0px 0px 20px 10px;
+  margin: 0px 0px 28px 10px;
   display: flex;
   align-items: center;
   flex-wrap: none;
@@ -509,7 +547,20 @@ a {
 }
 @media screen and (min-width: 768px) {
   .fonctionnement {
-    padding: 50px 70px;
+    padding: 50px 30px;
+  }
+  .fonctionnement__list {
+    display: flex;
+    align-items: center;
+    flex-wrap: none;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .fonctionnement__list h3 {
+    margin-right: 10px;
+  }
+  .fonctionnement .lifonct {
+    width: 30%;
   }
 }
 @media screen and (min-width: 1024px) {
@@ -523,24 +574,15 @@ a {
     flex-direction: row;
     justify-content: space-between;
   }
-  .fonctionnement__list h3 {
-    margin-right: 35px;
-  }
 }
 @media screen and (min-width: 1440px) {
   .fonctionnement {
     padding: 50px 180px;
   }
-  .fonctionnement h3 {
-    margin-right: 55px;
-  }
 }
 @media screen and (min-width: 1445px) {
   .fonctionnement {
     padding: 50px 180px;
-  }
-  .fonctionnement h3 {
-    margin-right: 105px;
   }
 }
 
@@ -643,10 +685,6 @@ a {
   }
 }
 
-.plats {
-  margin-bottom: 40px;
-  animation: plate-appear 2s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-}
 .plats h2 {
   font-size: 16px;
   font-weight: 300;
@@ -699,36 +737,6 @@ a {
   flex: 1;
   white-space: nowrap;
   overflow: hidden;
-}
-.plats--1 {
-  animation-delay: 1s;
-}
-.plats--2 {
-  animation-delay: 2s;
-}
-.plats--3 {
-  animation-delay: 3s;
-}
-.plats--4 {
-  animation-delay: 4s;
-}
-.plats--5 {
-  animation-delay: 5s;
-}
-.plats--6 {
-  animation-delay: 6s;
-}
-.plats--7 {
-  animation-delay: 7s;
-}
-.plats--8 {
-  animation-delay: 8s;
-}
-.plats--9 {
-  animation-delay: 9s;
-}
-.plats--10 {
-  animation-delay: 10s;
 }
 
 /*# sourceMappingURL=style.css.map */

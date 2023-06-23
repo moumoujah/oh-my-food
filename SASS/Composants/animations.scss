@@ -2,6 +2,7 @@
     position: relative;
     animation: content-appear 2s ease-in-out both;
 }
+                            // Loader de la page d'accueil
 .wrapper {
     display: flex;
     column-gap: 10px;
@@ -15,9 +16,7 @@
     z-index: 9999;
     animation: fadeOut 2s normal forwards ease-in-out;
     
-    
-    
-  
+                            //  Points en couleur du loader 
   .dot {
     
     border-radius: 50%;
@@ -52,7 +51,7 @@
 }
   
   
-
+                      // animations du coeur (fa-heart) dans les artciles des restaurants en page d'accueil et en haut des pages menus
 .btn_save{
     cursor: pointer;
     font-size: $size21;
@@ -60,23 +59,27 @@
     margin-right: 10px;
     border: 0;
     background-color: $grey-light;
+    margin-right: 20px;
+    margin-bottom: 24px;
+
     i {
         font-size: 21px;
-
+        position: absolute;
+        
         &:hover {
             font-weight: 700;
             background-image: $linear-gradient;
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
-            -moz-text-fill-color: transparent;
-            -moz-background-clip: text;
-            transition: all 700ms ease-in-out;
+            background-clip: text;
+            transition: all 500ms ease-in-out;
+            
         }
     }
 
 }
 
-
+                            // animation au survol des plats aux pages des menus 
 .plats__check{
 
     background-color: $color-tertiaire;
@@ -88,4 +91,16 @@
     border-bottom-right-radius: 15px;
     transition: margin-right 600ms ease;
 
+}
+
+      //  animation pour faire appraitre d'abord les entrées puis les plats et ensuite les desserts à l'arriver sur les pages de menus
+
+.plats{
+  margin-bottom: 40px;
+  animation: plate-appear $anim-dur cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  @for $i from 1 through $num-plates {
+    &--#{$i} {
+      animation-delay: $anim-delay * $i;
+    }
+}
 }

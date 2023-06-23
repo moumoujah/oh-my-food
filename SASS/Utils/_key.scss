@@ -1,5 +1,6 @@
 
-@keyframes fadeOut {
+                            
+@keyframes fadeOut {   
     0% {
       opacity:1;
     }
@@ -7,6 +8,8 @@
       opacity:0;
     }
   }
+
+
   @keyframes content-appear {
 	0% {
 		z-index: 0;
@@ -15,6 +18,7 @@
 		z-index: 10000;
 	}
 }
+
 @keyframes animate {
     0% {
       transform: translateY(-10px);
@@ -24,6 +28,7 @@
     }
    
   }
+
   @keyframes check {
     0% {
       transform: scale(0);
@@ -33,6 +38,7 @@
     }
     
   }
+  
   @keyframes plate-appear {
     0% {
       transform: scale(0)
