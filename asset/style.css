@@ -81,7 +81,7 @@
 
 .btn_save {
   cursor: pointer;
-  font-size: 21px;
+  font-size: 23px;
   font-weight: 300;
   margin-right: 10px;
   border: 0;
@@ -90,7 +90,7 @@
   margin-bottom: 24px;
 }
 .btn_save i {
-  font-size: 21px;
+  font-size: 23px;
   position: absolute;
 }
 .btn_save i:hover {

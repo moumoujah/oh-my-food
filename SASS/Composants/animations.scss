@@ -54,7 +54,7 @@
                       // animations du coeur (fa-heart) dans les artciles des restaurants en page d'accueil et en haut des pages menus
 .btn_save{
     cursor: pointer;
-    font-size: $size21;
+    font-size: $size23;
     font-weight: $font-3;
     margin-right: 10px;
     border: 0;
@@ -63,7 +63,7 @@
     margin-bottom: 24px;
 
     i {
-        font-size: 21px;
+      font-size: $size23;
         position: absolute;
         
         &:hover {
