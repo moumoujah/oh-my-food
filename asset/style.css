@@ -525,8 +525,8 @@ a {
   margin-left: -15px;
   border-radius: 50%;
   background-color: #9356DC;
-  height: 20px;
-  width: 20px;
+  height: 22px;
+  width: 22px;
   color: #FFF;
   display: flex;
   align-items: center;
@@ -536,7 +536,8 @@ a {
   font-size: 14px;
 }
 .fonctionnement .lifonct__icon {
-  margin: 0px 27px 0px 21px;
+  margin: 0px 27px 0px 25px;
+  font-size: 18px;
 }
 .fonctionnement .lifonct__i-color {
   color: #9356DC;
