@@ -14,7 +14,7 @@
         height: 50px;
         font-weight: $font-6;
         font-style: normal;
-        @include flex(center, none, row, center);
+        @include flex(center, nowrap, row, center);
         
         i{
             margin-right: 17px;
@@ -51,7 +51,7 @@
             height: 72.38px;
             background-color:  $grey-light;
             margin: 0px 0px 28px 10px;
-            @include flex(center, none, row, flex-start);
+            @include flex(center, nowrap, row, flex-start);
             border-radius: 20px;
             @include fonctionnement-shadow;
             
@@ -64,25 +64,31 @@
                 height: 22px;
                 width: 22px;
                 color: $white;
-                @include flex(center, none, row, center);
+                @include flex(center, nowrap, row, center);
                 font-size: $size14;
                }
                &__icon{
                 margin: 0px 27px 0px 25px;
                 font-size: $size18;
                }
-               &__i-color{
-                color: $color-primaire;
+            
+               &:hover {
+                .i-color{
+                    color: $color-primaire;
+            }
+               
                }
                 h3{
                     font-weight: $font-5;
                     font-size: $size16;
                 }
+               
+
            }
      
            @media screen and (min-width: 768px){
             &__list{
-                @include flex(center, none, row, space-between);
+                @include flex(center, nowrap, row, space-between);
                h3{
                 margin-right: 10px;
                }
@@ -97,7 +103,7 @@
              padding: 50px ;
 
               &__list{
-                @include flex(center, none, row, space-between);
+                @include flex(center, nowrap, row, space-between);
                
               }
            }

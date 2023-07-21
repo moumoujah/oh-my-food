@@ -327,7 +327,7 @@ a {
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
   display: flex;
   align-items: center;
-  flex-wrap: none;
+  flex-wrap: nowrap;
   flex-direction: row;
   justify-content: center;
   color: #FFF;
@@ -414,7 +414,7 @@ a {
 .menu__order {
   display: flex;
   align-items: center;
-  flex-wrap: none;
+  flex-wrap: nowrap;
   flex-direction: row;
   justify-content: center;
   margin-bottom: 5px;
@@ -451,7 +451,7 @@ a {
   .footer ul {
     display: flex;
     align-items: center;
-    flex-wrap: none;
+    flex-wrap: nowrap;
     flex-direction: row;
     justify-content: space-between;
   }
@@ -480,7 +480,7 @@ a {
   font-style: normal;
   display: flex;
   align-items: center;
-  flex-wrap: none;
+  flex-wrap: nowrap;
   flex-direction: row;
   justify-content: center;
 }
@@ -514,7 +514,7 @@ a {
   margin: 0px 0px 28px 10px;
   display: flex;
   align-items: center;
-  flex-wrap: none;
+  flex-wrap: nowrap;
   flex-direction: row;
   justify-content: flex-start;
   border-radius: 20px;
@@ -530,7 +530,7 @@ a {
   color: #FFF;
   display: flex;
   align-items: center;
-  flex-wrap: none;
+  flex-wrap: nowrap;
   flex-direction: row;
   justify-content: center;
   font-size: 14px;
@@ -539,7 +539,7 @@ a {
   margin: 0px 27px 0px 25px;
   font-size: 18px;
 }
-.fonctionnement .lifonct__i-color {
+.fonctionnement .lifonct:hover .i-color {
   color: #9356DC;
 }
 .fonctionnement .lifonct h3 {
@@ -553,7 +553,7 @@ a {
   .fonctionnement__list {
     display: flex;
     align-items: center;
-    flex-wrap: none;
+    flex-wrap: nowrap;
     flex-direction: row;
     justify-content: space-between;
   }
@@ -571,7 +571,7 @@ a {
   .fonctionnement__list {
     display: flex;
     align-items: center;
-    flex-wrap: none;
+    flex-wrap: nowrap;
     flex-direction: row;
     justify-content: space-between;
   }
@@ -708,7 +708,7 @@ a {
   border-radius: 15px;
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
   display: flex;
-  align-items: none;
+  align-items: inherit;
   flex-wrap: nowrap;
   flex-direction: row;
   justify-content: space-between;

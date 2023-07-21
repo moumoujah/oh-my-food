@@ -33,7 +33,7 @@
         }
        
         ul{
-          @include flex(center, none, row, space-between);
+          @include flex(center, nowrap, row, space-between);
            
         }
         &__li{

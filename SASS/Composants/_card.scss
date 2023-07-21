@@ -72,6 +72,6 @@
 }
                     // div qui contient le boutton (btn) commander en bas des pages menus 
 .menu__order{
-    @include flex(center, none, row, center);
+    @include flex(center, nowrap, row, center);
     margin-bottom: 5px;
 }

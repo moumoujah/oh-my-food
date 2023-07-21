@@ -6,7 +6,7 @@
     border-radius: 25px;
     background: $linear-gradient;
     @include card-liner-shadow;
-    @include flex(center, none, row, center);
+    @include flex(center, nowrap, row, center);
     color: $white;
     font-weight: $font-5;
       
